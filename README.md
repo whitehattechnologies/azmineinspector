@@ -1,0 +1,2 @@
+# azmineinspector
+GitHub Pages
