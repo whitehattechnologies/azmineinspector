@@ -846,6 +846,100 @@ body {
 .cid-qOWwJ18RwY .mbr-title {
   text-align: center;
 }
+.cid-qOYD9djyVG {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #232323;
+}
+.cid-qOYD9djyVG .icon-transition span {
+  padding: 0.1rem 0.9rem;
+  border-radius: 50%;
+  color: #232323;
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  width: 3em;
+  background: #ffffff none repeat scroll 0 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  font-size: 14px;
+}
+.cid-qOYD9djyVG .content-row {
+  flex-direction: row-reverse;
+}
+.cid-qOYD9djyVG .photo-split {
+  padding: 0;
+}
+.cid-qOYD9djyVG .photo-split img {
+  width: 100%;
+}
+.cid-qOYD9djyVG .icon-transition span:hover {
+  background-color: #ffbc00;
+}
+.cid-qOYD9djyVG .counter-container ul {
+  display: flex;
+  flex-direction: column;
+}
+.cid-qOYD9djyVG .counter-container ul li {
+  margin-bottom: .5rem;
+  list-style: ✓;
+}
+.cid-qOYD9djyVG .counter-container ul li:before {
+  color: #ffbc00;
+  display: inline-block;
+  content: '✓';
+  text-align: center;
+  line-height: 1.5em;
+  transition: all .2s;
+  width: 25px;
+  height: 25px;
+}
+.cid-qOYD9djyVG .wrap-block {
+  padding: 3rem 3rem;
+}
+.cid-qOYD9djyVG .wrap-block ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cid-qOYD9djyVG .wrap-block ul li {
+  display: inline-block;
+}
+.cid-qOYD9djyVG .wrap-block ul li span {
+  text-align: center;
+}
+.cid-qOYD9djyVG .social-media {
+  margin-top: 1.5em;
+  padding: 0;
+}
+.cid-qOYD9djyVG .social-media ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+.cid-qOYD9djyVG .social-media ul li {
+  padding: 4px;
+  display: inline-block;
+}
+.cid-qOYD9djyVG .mbr-list,
+.cid-qOYD9djyVG .social-media ul {
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .cid-qOYD9djyVG .wrap-block {
+    padding: 3rem 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .cid-qOYD9djyVG .mbr-section-title,
+  .cid-qOYD9djyVG .mbr-section-subtitle,
+  .cid-qOYD9djyVG .mbr-text {
+    text-align: center !important;
+  }
+  .cid-qOYD9djyVG .social-list {
+    text-align: center !important;
+  }
+}
 .cid-qOWln5mCV9 {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -1507,7 +1601,7 @@ body {
   margin-right: auto ;
   border: 1px solid black ;
   text-align: center ;
-  padding: 10px ;
+  padding: 50px ;
 }
 .cid-qOWwZuG8Gf {
   padding-top: 45px;
