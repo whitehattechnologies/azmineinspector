@@ -1104,6 +1104,15 @@ body {
   padding: 0.5em 0.6em;
   width: 98%;
 }
+#custom-html-1s .clearbox {
+  font-size: 18px ;
+  border: 1px solid black ;
+  margin-left: autopx ;
+  margin-right: autopx ;
+  margin-bottom: 50px solid white;
+  text-align: center ;
+  padding: 50px ;
+}
 .cid-qOWlimD8Yb .navbar {
   min-height: 77px;
   transition: all .3s;
