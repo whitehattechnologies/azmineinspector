@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Pierce for Mine Inspector",
-    "currentPage": "index.html",
+    "currentPage": "Blog.html",
     "theme": {
       "name": "portfoliom4",
       "title": "PortfolioM4",
@@ -34,7 +34,7 @@
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.6.7",
-    "uniqCompNum": 189,
+    "uniqCompNum": 190,
     "versionPublish": "4.8.1",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/128px-liftarn-adventurer-hat.svg-128x128.png",
@@ -7801,6 +7801,18 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div id=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
+          "_customCSS": "/* Type valid CSS here */\n.my-image {\n  width: 100%;\n  align: center;\n}\n\n.google_translate_element {\n    position: absolute;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-59"
         }
       ]
     },
