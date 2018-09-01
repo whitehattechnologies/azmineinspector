@@ -6278,6 +6278,9 @@ body {
   width: 100%;
   align: center;
 }
+#custom-html-58 .google_translate_element {
+  position: absolute;
+}
 #custom-html-1s .clearbox {
   font-size: 18px ;
   border: 1px solid black ;
