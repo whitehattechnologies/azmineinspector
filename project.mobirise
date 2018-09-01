@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Pierce for Mine Inspector",
-    "currentPage": "Blog.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "portfoliom4",
       "title": "PortfolioM4",
@@ -7291,7 +7291,7 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<div id=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
+          "_customHTML": "<div class=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
           "_customCSS": "/* Type valid CSS here */\n.my-image {\n  width: 100%;\n  align: center;\n}\n\n.google_translate_element {\n    position: absolute;\n}",
           "alias": "code-editor",
           "_tags": [
@@ -7812,7 +7812,9 @@
             "Extension"
           ],
           "_name": "pro.custom-html",
-          "_anchor": "custom-html-59"
+          "_anchor": "custom-html-59",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         }
       ]
     },
