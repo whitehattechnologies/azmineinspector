@@ -8763,3 +8763,13 @@ body {
 .cid-r2pDiImsyq .mbr-text {
   color: #ffffff;
 }
+#custom-html-5a {
+  /* Type valid CSS here */
+}
+#custom-html-5a .my-image {
+  width: 100%;
+  align: center;
+}
+#custom-html-5a .google_translate_element {
+  position: absolute;
+}
