@@ -6853,23 +6853,6 @@
         {
           "_customTemplate": true,
           "_afterNavbarItem": false,
-          "_customHTML": "<div id=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
-          "_customCSS": "/* Type valid CSS here */\n.my-image {\n  width: 100%;\n  align: center;\n}\n\n.google_translate_element {\n    position: absolute;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-58",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [
-            "<script type=\"text/javascript\">\nfunction googleTranslateElementInit() {\n  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');\n}\n</script>",
-            "<script type=\"text/javascript\" position=\"absolute\" src=\"//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\"></script>"
-          ]
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
           "_customHTML": "<section class=\"mbr-section\" data-rv-view=\"41\">\n   <div class=\"mbr-section__container container mbr-section__container--isolated\">\n             \n           <div class=\"clearbox\"><p>Paid for by Pierce for Mine Inspector, Authorized by William \"Bill\" Pierce</p></div>   \n   </div>\n</section>",
           "_customCSS": ".clearbox\n{\nfont-size: 18px ;\nborder: 1px solid black ;\nmargin-left: autopx ;\nmargin-right: autopx ;\nmargin-bottom: 50px solid white; \ntext-align: center ;\npadding: 50px ;  \n}",
           "alias": "code-editor",
@@ -7304,6 +7287,23 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div id=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
+          "_customCSS": "/* Type valid CSS here */\n.my-image {\n  width: 100%;\n  align: center;\n}\n\n.google_translate_element {\n    position: absolute;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-58",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script type=\"text/javascript\">\nfunction googleTranslateElementInit() {\n  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');\n}\n</script>",
+            "<script type=\"text/javascript\" position=\"absolute\" src=\"//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\"></script>"
+          ]
         }
       ]
     },
