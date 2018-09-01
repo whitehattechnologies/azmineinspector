@@ -6271,6 +6271,12 @@ body {
     text-align: center !important;
   }
 }
+#custom-html-58 {
+  /* Type valid CSS here */
+}
+#custom-html-58 .my-image {
+  width: 100%;
+}
 #custom-html-1s .clearbox {
   font-size: 18px ;
   border: 1px solid black ;
