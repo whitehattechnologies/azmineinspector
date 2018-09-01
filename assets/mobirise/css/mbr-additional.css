@@ -7057,7 +7057,7 @@ body {
 }
 #custom-html-59 .my-image {
   width: 100%;
-  align: center;
+  align: absolute;
 }
 #custom-html-59 .google_translate_element {
   position: absolute;
