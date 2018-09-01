@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Pierce for Mine Inspector",
-    "currentPage": "index.html",
+    "currentPage": "MyQualifications.html",
     "theme": {
       "name": "portfoliom4",
       "title": "PortfolioM4",
@@ -34,7 +34,7 @@
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.6.7",
-    "uniqCompNum": 237,
+    "uniqCompNum": 241,
     "versionPublish": "4.8.1",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/128px-liftarn-adventurer-hat.svg-128x128.png",
@@ -668,6 +668,115 @@
         },
         {
           "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "a:link": {
+              "text-decoration": "none"
+            },
+            ".icon-transition span": {
+              "padding": "0.1rem 0.9rem",
+              "border-radius": "50%",
+              "color": "rgb(255, 255, 255)",
+              "display": "block",
+              "height": "3em",
+              "line-height": "3em",
+              "width": "3em",
+              "background": "@circleColor none repeat scroll 0 0",
+              "-webkit-transition": "all 0.3s ease-out 0s",
+              "transition": "all 0.3s ease-out 0s",
+              "font-size": "14px"
+            },
+            ".icon-transition span:hover": {
+              "background-color": "@circleHover"
+            },
+            ".social-media": {
+              "ul": {
+                "li": {
+                  "padding": "4px",
+                  "display": "inline-block"
+                },
+                "margin": "0",
+                "padding": "0",
+                "margin-bottom": "8px"
+              }
+            },
+            ".foot-menu": {
+              "flex-direction": "row",
+              "margin": "0",
+              "margin-bottom": "8px",
+              "padding": ".6em 0",
+              "> li": {
+                "font-size": "14px",
+                "padding": "0",
+                ".rhombus": {
+                  "width": "0",
+                  "height": "0",
+                  "right": "4px",
+                  "border": "4px solid transparent",
+                  "border-bottom-color": "@dotColor",
+                  "position": "relative",
+                  "top": "-19px",
+                  "&::after": {
+                    "width": "0",
+                    "height": "0",
+                    "content": "''",
+                    "position": "absolute",
+                    "left": "-4px",
+                    "top": "4px",
+                    "border": "4px solid transparent",
+                    "border-top-color": "@dotColor"
+                  }
+                },
+                "display": "inline-block"
+              },
+              "li": {
+                "a": {
+                  "font-family": "'OpenSans', sans-serif",
+                  "display": "inline-block",
+                  "letter-spacing": "2px",
+                  "padding": "0 10px"
+                }
+              }
+            },
+            ".plan-title,.text-letter": {
+              "-webkit-transition": "all 0.3s ease-out 0s",
+              "transition": "all 0.3s ease-out 0s",
+              "font-weight": "600"
+            },
+            ".plan-title": {
+              "color": "#444444"
+            },
+            "@media (max-width: 767px)": {
+              ".foot-menu": {
+                "padding": "15px 1rem"
+              }
+            },
+            ".mbr-section-title span": {
+              "color": "#ffbc00"
+            },
+            ".mbr-text": {
+              "color": "#444444"
+            }
+          },
+          "_name": "footer1",
+          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" plugins=\"SocialLikes,Socicon\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <select title=\"Icons\" name=\"iconsCount\" condition=\"showIcons\">\n            <option value=\"1\" selected=\"\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n        </select>\n        <input type=\"color\" title=\"Circle Color\" name=\"circleColor\" value=\"#444444\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Circle Hover\" name=\"circleHover\" value=\"#ffbc00\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Dots Color\" name=\"dotColor\" value=\"#444444\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#c1c1c1\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n       <div class=\"container text-center\">\n            <div class=\"col-md-12 col-sm-12\">\n              <h1 mbr-if=\"showTitle\" class=\"plan-title mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\">\n                  Portfolio<span class=\"text-letter\">M4.</span>\n              </h1>\n            </div>\n            <div class=\"social-media col-md-12 col-sm-12\" mbr-if=\"showIcons\">\n                <ul>\n                    <li mbr-if=\"iconsCount > 0\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-facebook socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 1\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-twitter socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 2\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-linkedin socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 3\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-youtube socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 4\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-rss socicon\" style=\"\"></span>\n                      </a>\n                    </li>\n                 </ul>\n            </div>\n            <div class=\"row justify-content-center\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list=\"\" mbr-list-grow=\"menuItems\">\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><p>&nbsp;&nbsp;&nbsp;&nbsp;<br></p></li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"assets/files/Pierce for Mine Inspector - Terms &amp; Conditions.pdf\" class=\"text-danger\">\n                        \n                            TERMS AND CONDITIONS\n                        \n                        </a><div class=\"rhombus\"></div><a href=\"assets/files/Pierce for Mine Inspector - Terms &amp; Conditions.pdf\">\n                    </a></li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"assets/files/Pierce for Mine Inspector - Privacy Policy.pdf\" class=\"text-danger\">\n                        \n                            PRIVACY POLICY\n                        \n                        </a><div class=\"rhombus\"></div><a href=\"assets/files/Pierce for Mine Inspector - Privacy Policy.pdf\">\n                    </a></li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><br><br>\n                    </li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><br><br>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"row\">\n                <p class=\"footer-text col-md-12 col-sm-12 mbr-fonts-style mbr-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><a href=\"https://www.whitehattechnology.com\" class=\"text-danger\">Copyrght (c) 2018 White Hat Technology LLC</a><br></p>\n            </div><hr>\n           <div id=\"google_translate_element\"></div>\n    </div>\n    <div id=\"google_translate_element\"></div>\n\n</section>",
+          "_anchor": "footer1-6n",
+          "_isUserblock": true,
+          "_sourceTheme": "portfoliom4",
+          "_cid": "r2riX7jV3F",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
             ".navbar": {
               "min-height": "77px",
               "transition": "all .3s",
@@ -976,6 +1085,100 @@
           "_params": {}
         },
         {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<div class=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
+          "_customCSS": ".google_translate_element {\n    position: absolute;\n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-6h",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [
+            "<script type=\"text/javascript\">\nfunction googleTranslateElementInit() {\n  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');\n}\n</script>",
+            "<script type=\"text/javascript\" src=\"//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\"></script>"
+          ]
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "text-align": "center",
+              "color": "#444444"
+            }
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"mbr-section content2\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#c1c1c1\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-sm-12 text-section\">\n                <h1 class=\"mbr-fonts-style mbr-title align-left pb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-title\" mbr-theme-style=\"display-2\">WHY I LIKE PHOTOGRAPHY<br></h1>\n                <h1 class=\"mbr-fonts-style mbr-text align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Help improve this site's Google Translate. <br><a href=\"https://translate.google.com/community\" target=\"_blank\" class=\"text-secondary\">Click&nbsp;here&nbsp;to learn how.</a></h1>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content2-6o",
+          "_isUserblock": true,
+          "_sourceTheme": "portfoliom4",
+          "_cid": "r2riXj4fAU",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "MineInspectorInfo.html": {
+      "settings": {
+        "title": "Mine Inspector Info",
+        "order": 18
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-title": {
+              "text-align": "center"
+            }
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"mbr-section content2\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-sm-12 text-section\">\n                <h1 class=\"mbr-fonts-style mbr-title align-left pb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-title\" mbr-theme-style=\"display-2\">What are the Mine Inspector duties?<br></h1>\n                <h1 class=\"mbr-fonts-style mbr-text align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><br>The mine inspector shall inspect, at least once every three months, every active underground mine in the state employing fifty or more persons, and at least once each year, every other mine. The inspector shall inspect the operation, conditions, safety appliances, machinery, equipment, sanitation and ventilation, the means of ingress and egress, the means taken to protect the lives, health and safety of the miners, the cause of accidents and deaths occurring at the mine and the means taken to comply with provisions of this title.\n<div><br></div><br><div>The mine inspector may enter and inspect any abandoned or inactive mine to determine whether any dangerous condition exists which may affect the health and safety of the general public.\n</div><div><br></div><br><div>The inspector at any time may enter, examine and inspect any mine or part of any mine and inspect any connected plant or equipment or any part of the workings of the mine.\n</div><div><br></div><br><div>The inspector may enter on such land to inspect for dangerous conditions which may present a health and safety hazard to the public. If hazards exist, the inspector may erect warning signs across or near the entrance of any mine shaft, portal, pit or other mine opening prohibiting the entry of unauthorized persons or erect other protective devices as necessary.&nbsp;</div><br><div>*Source - Arizona State Mine Inspector, \"Mine Inspections,\" accessed October 2, 2014</div><div><br></div></h1>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qPTyLlVI3M",
+          "_anchor": "content2-w",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-title": {
+              "text-align": "center"
+            }
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"mbr-section content2\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-sm-12 text-section\">\n                <h1 class=\"mbr-fonts-style mbr-title align-left pb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-title\" mbr-theme-style=\"display-2\">Qaulification Requirements</h1>\n                <h1 class=\"mbr-fonts-style mbr-text align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Title 27, Chapter 1, Article 2, Section 27-121 of the Arizona Revised Statutes establishes the qualifications of the office:\n<div>\n</div><div><br></div><br><div>A. The state mine inspector shall be a resident of this state at least two years before election, not under thirty years of age, and shall have been practically engaged in, and acquainted with, mines and mining in this state, and shall have had at least four years' experience in mining or experience in any industry under the jurisdiction of the state mine inspector, or both.</div><br><div>\n</div><div>B. No person may be an inspector or deputy inspector while an employee, director or officer of a mining, milling or smelting company.</div><br><div>\n</div><div>\n</div><div>C. The inspector, and each deputy, shall devote full time to official duties.[3]\n</div><div>\n</div><div>resident of Arizona for at least two years.</div><br><div>\n</div><div>at least 30 years old.\n</div><div>at least four years' experience in mining and/or experience an industry under the jurisdiction of the state mine inspector.\n</div><div>not an employee, director or officer of a mining, milling or smelting company.\n</div><div>must work full-time for official duties. (2)</div><div><br></div><br><div>* Source - &nbsp;Arizona State Legislature, \"Revised Statutes: Title 27 - Minerals, Oil and Gas,\" accessed July 24, 2013</div></h1>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qPTyLmnFWV",
+          "_anchor": "content2-x",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_customTemplate": true,
+          "_afterNavbarItem": false,
+          "_customHTML": "<section class=\"mbr-section\" data-rv-view=\"41\">\n   <div class=\"mbr-section__container container mbr-section__container--isolated\">\n             \n           <div class=\"clearbox\"><p>Paid for by Pierce for Mine Inspector, Authorized by William \"Bill\" Pierce</p></div>   \n   </div>\n</section>",
+          "_customCSS": ".clearbox\n{\nfont-size: 18px ;\nborder: 1px solid black ;\nmargin-left: autopx ;\nmargin-right: autopx ;\nmargin-bottom: 50px solid white;\nmargin-top: 50px solid white; \ntext-align: center ;\npadding: 50px ;  \n}",
+          "alias": "code-editor",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "pro.custom-html",
+          "_anchor": "custom-html-1h"
+        },
+        {
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
             "padding-bottom": "(@paddingBottom * 15px)",
@@ -1070,92 +1273,19 @@
               "color": "#ffbc00"
             },
             ".mbr-text": {
-              "color": "#ffffff"
+              "color": "#444444"
             }
           },
           "_name": "footer1",
-          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" plugins=\"SocialLikes,Socicon\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <select title=\"Icons\" name=\"iconsCount\" condition=\"showIcons\">\n            <option value=\"1\" selected=\"\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n        </select>\n        <input type=\"color\" title=\"Circle Color\" name=\"circleColor\" value=\"#444444\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Circle Hover\" name=\"circleHover\" value=\"#ffbc00\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Dots Color\" name=\"dotColor\" value=\"#444444\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#c1c1c1\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n       <div class=\"container text-center\">\n            <div class=\"col-md-12 col-sm-12\">\n              <h1 mbr-if=\"showTitle\" class=\"plan-title mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\">\n                  Portfolio<span class=\"text-letter\">M4.</span>\n              </h1>\n            </div>\n            <div class=\"social-media col-md-12 col-sm-12\" mbr-if=\"showIcons\">\n                <ul>\n                    <li mbr-if=\"iconsCount > 0\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-facebook socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 1\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-twitter socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 2\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-linkedin socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 3\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-youtube socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 4\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-rss socicon\" style=\"\"></span>\n                      </a>\n                    </li>\n                 </ul>\n            </div>\n            <div class=\"row justify-content-center\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list=\"\" mbr-list-grow=\"menuItems\">\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><p>&nbsp;&nbsp;&nbsp;&nbsp;<br></p></li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"assets/files/Pierce for Mine Inspector - Terms &amp; Conditions.pdf\" class=\"text-danger\">\n                        \n                            TERMS AND CONDITIONS\n                        \n                        </a><div class=\"rhombus\"></div><a href=\"assets/files/Pierce for Mine Inspector - Terms &amp; Conditions.pdf\">\n                    </a></li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"assets/files/Pierce for Mine Inspector - Privacy Policy.pdf\" class=\"text-danger\">\n                        \n                            PRIVACY POLICY\n                        \n                        </a><div class=\"rhombus\"></div><a href=\"assets/files/Pierce for Mine Inspector - Privacy Policy.pdf\">\n                    </a></li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><br><br>\n                    </li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><br><br>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"row\">\n                <p class=\"footer-text col-md-12 col-sm-12 mbr-fonts-style mbr-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><a href=\"https://www.whitehattechnology.com\" class=\"text-danger\">Copyright (c) 2018 White Hat Technology LLC</a></p>\n            </div>\n           <div id=\"google_translate_element\"></div>\n    </div>\n    <div id=\"google_translate_element\"></div>\n\n</section>",
-          "_anchor": "footer1-6g",
+          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"SocialLikes,Socicon\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <select title=\"Icons\" name=\"iconsCount\" condition=\"showIcons\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n        </select>\n        <input type=\"color\" title=\"Circle Color\" name=\"circleColor\" value=\"#444444\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Circle Hover\" name=\"circleHover\" value=\"#ffbc00\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Dots Color\" name=\"dotColor\" value=\"#444444\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#c1c1c1\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n       <div class=\"container text-center\">\n            <div class=\"col-md-12 col-sm-12\">\n              <h1 mbr-if=\"showTitle\" class=\"plan-title mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\">\n                  Portfolio<span class=\"text-letter\">M4.</span>\n              </h1>\n            </div>\n            <div class=\"social-media col-md-12 col-sm-12\" mbr-if=\"showIcons\">\n                <ul>\n                    <li mbr-if=\"iconsCount > 0\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-facebook socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 1\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-twitter socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 2\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-linkedin socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 3\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-youtube socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 4\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon class=\"mbr-iconfont socicon-rss socicon\" style></span>\n                      </a>\n                    </li>\n                 </ul>\n            </div>\n            <div class=\"row justify-content-center\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><p>&nbsp;&nbsp;&nbsp;&nbsp;<br></p></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"assets/files/Pierce for Mine Inspector - Terms & Conditions.pdf\" class=\"text-danger\">\n                        \n                            TERMS AND CONDITIONS\n                        \n                        </a><div class=\"rhombus\"></div><a href=\"assets/files/Pierce for Mine Inspector - Terms & Conditions.pdf\">\n                    </a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"assets/files/Pierce for Mine Inspector - Privacy Policy.pdf\" class=\"text-danger\">\n                        \n                            PRIVACY POLICY\n                        \n                        </a><div class=\"rhombus\"></div><a href=\"assets/files/Pierce for Mine Inspector - Privacy Policy.pdf\">\n                    </a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><br><br>\n                    </li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><br><br>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"row\">\n                <p class=\"footer-text col-md-12 col-sm-12 mbr-fonts-style mbr-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><a href=\"https://www.whitehattechnology.com\" class=\"text-danger\">Copyrght (c) 2018 White Hat Technology LLC</a><br></p>\n            </div><hr>\n           <div id=\"google_translate_element\"></div>\n    </div>\n    <div id=\"google_translate_element\"></div>\n\n</section>",
+          "_anchor": "footer1-6l",
           "_isUserblock": true,
           "_sourceTheme": "portfoliom4",
-          "_cid": "r2r2WSb3So",
+          "_cid": "r2riQstFPd",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
           "_params": {}
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<div class=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
-          "_customCSS": ".google_translate_element {\n    position: absolute;\n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-6h",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [
-            "<script type=\"text/javascript\">\nfunction googleTranslateElementInit() {\n  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');\n}\n</script>",
-            "<script type=\"text/javascript\" src=\"//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\"></script>"
-          ]
-        }
-      ]
-    },
-    "MineInspectorInfo.html": {
-      "settings": {
-        "title": "Mine Inspector Info",
-        "order": 18
-      },
-      "components": [
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".mbr-title": {
-              "text-align": "center"
-            }
-          },
-          "_name": "content2",
-          "_customHTML": "<section class=\"mbr-section content2\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"8\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#efefef\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-sm-12 text-section\">\n                <h1 class=\"mbr-fonts-style mbr-title align-left pb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-title\" mbr-theme-style=\"display-2\">What are the Mine Inspector duties?<br></h1>\n                <h1 class=\"mbr-fonts-style mbr-text align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><br>The mine inspector shall inspect, at least once every three months, every active underground mine in the state employing fifty or more persons, and at least once each year, every other mine. The inspector shall inspect the operation, conditions, safety appliances, machinery, equipment, sanitation and ventilation, the means of ingress and egress, the means taken to protect the lives, health and safety of the miners, the cause of accidents and deaths occurring at the mine and the means taken to comply with provisions of this title.\n<div><br></div><br><div>The mine inspector may enter and inspect any abandoned or inactive mine to determine whether any dangerous condition exists which may affect the health and safety of the general public.\n</div><div><br></div><br><div>The inspector at any time may enter, examine and inspect any mine or part of any mine and inspect any connected plant or equipment or any part of the workings of the mine.\n</div><div><br></div><br><div>The inspector may enter on such land to inspect for dangerous conditions which may present a health and safety hazard to the public. If hazards exist, the inspector may erect warning signs across or near the entrance of any mine shaft, portal, pit or other mine opening prohibiting the entry of unauthorized persons or erect other protective devices as necessary.&nbsp;</div><br><div>*Source - Arizona State Mine Inspector, \"Mine Inspections,\" accessed October 2, 2014</div><div><br></div></h1>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qPTyLlVI3M",
-          "_anchor": "content2-w",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "background-color": "@bgColor",
-            ".mbr-title": {
-              "text-align": "center"
-            }
-          },
-          "_name": "content2",
-          "_customHTML": "<section class=\"mbr-section content2\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"3\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-sm-12 text-section\">\n                <h1 class=\"mbr-fonts-style mbr-title align-left pb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-title\" mbr-theme-style=\"display-2\">Qaulification Requirements</h1>\n                <h1 class=\"mbr-fonts-style mbr-text align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Title 27, Chapter 1, Article 2, Section 27-121 of the Arizona Revised Statutes establishes the qualifications of the office:\n<div>\n</div><div><br></div><br><div>A. The state mine inspector shall be a resident of this state at least two years before election, not under thirty years of age, and shall have been practically engaged in, and acquainted with, mines and mining in this state, and shall have had at least four years' experience in mining or experience in any industry under the jurisdiction of the state mine inspector, or both.</div><br><div>\n</div><div>B. No person may be an inspector or deputy inspector while an employee, director or officer of a mining, milling or smelting company.</div><br><div>\n</div><div>\n</div><div>C. The inspector, and each deputy, shall devote full time to official duties.[3]\n</div><div>\n</div><div>resident of Arizona for at least two years.</div><br><div>\n</div><div>at least 30 years old.\n</div><div>at least four years' experience in mining and/or experience an industry under the jurisdiction of the state mine inspector.\n</div><div>not an employee, director or officer of a mining, milling or smelting company.\n</div><div>must work full-time for official duties. (2)</div><div><br></div><br><div>* Source - &nbsp;Arizona State Legislature, \"Revised Statutes: Title 27 - Minerals, Oil and Gas,\" accessed July 24, 2013</div></h1>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "qPTyLmnFWV",
-          "_anchor": "content2-x",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<section class=\"mbr-section\" data-rv-view=\"41\">\n   <div class=\"mbr-section__container container mbr-section__container--isolated\">\n             \n           <div class=\"clearbox\"><p>Paid for by Pierce for Mine Inspector, Authorized by William \"Bill\" Pierce</p></div>   \n   </div>\n</section>",
-          "_customCSS": ".clearbox\n{\nfont-size: 18px ;\nborder: 1px solid black ;\nmargin-left: autopx ;\nmargin-right: autopx ;\nmargin-bottom: 50px solid white;\nmargin-top: 50px solid white; \ntext-align: center ;\npadding: 50px ;  \n}",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-1h"
         },
         {
           "_styles": {
@@ -1467,115 +1597,6 @@
           "_params": {}
         },
         {
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "a:link": {
-              "text-decoration": "none"
-            },
-            ".icon-transition span": {
-              "padding": "0.1rem 0.9rem",
-              "border-radius": "50%",
-              "color": "rgb(255, 255, 255)",
-              "display": "block",
-              "height": "3em",
-              "line-height": "3em",
-              "width": "3em",
-              "background": "@circleColor none repeat scroll 0 0",
-              "-webkit-transition": "all 0.3s ease-out 0s",
-              "transition": "all 0.3s ease-out 0s",
-              "font-size": "14px"
-            },
-            ".icon-transition span:hover": {
-              "background-color": "@circleHover"
-            },
-            ".social-media": {
-              "ul": {
-                "li": {
-                  "padding": "4px",
-                  "display": "inline-block"
-                },
-                "margin": "0",
-                "padding": "0",
-                "margin-bottom": "8px"
-              }
-            },
-            ".foot-menu": {
-              "flex-direction": "row",
-              "margin": "0",
-              "margin-bottom": "8px",
-              "padding": ".6em 0",
-              "> li": {
-                "font-size": "14px",
-                "padding": "0",
-                ".rhombus": {
-                  "width": "0",
-                  "height": "0",
-                  "right": "4px",
-                  "border": "4px solid transparent",
-                  "border-bottom-color": "@dotColor",
-                  "position": "relative",
-                  "top": "-19px",
-                  "&::after": {
-                    "width": "0",
-                    "height": "0",
-                    "content": "''",
-                    "position": "absolute",
-                    "left": "-4px",
-                    "top": "4px",
-                    "border": "4px solid transparent",
-                    "border-top-color": "@dotColor"
-                  }
-                },
-                "display": "inline-block"
-              },
-              "li": {
-                "a": {
-                  "font-family": "'OpenSans', sans-serif",
-                  "display": "inline-block",
-                  "letter-spacing": "2px",
-                  "padding": "0 10px"
-                }
-              }
-            },
-            ".plan-title,.text-letter": {
-              "-webkit-transition": "all 0.3s ease-out 0s",
-              "transition": "all 0.3s ease-out 0s",
-              "font-weight": "600"
-            },
-            ".plan-title": {
-              "color": "#444444"
-            },
-            "@media (max-width: 767px)": {
-              ".foot-menu": {
-                "padding": "15px 1rem"
-              }
-            },
-            ".mbr-section-title span": {
-              "color": "#ffbc00"
-            },
-            ".mbr-text": {
-              "color": "#ffffff"
-            }
-          },
-          "_name": "footer1",
-          "_customHTML": "<section group=\"Social\" data-bg-video=\"{{bg.type == 'video' &amp;&amp; bg.value.url}}\" plugins=\"SocialLikes,Socicon\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline=\"\" title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Copyright\" name=\"showText\" checked=\"\">\n        <input type=\"checkbox\" title=\"Show Icons\" name=\"showIcons\">\n        <select title=\"Icons\" name=\"iconsCount\" condition=\"showIcons\">\n            <option value=\"1\" selected=\"\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n        </select>\n        <input type=\"color\" title=\"Circle Color\" name=\"circleColor\" value=\"#444444\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Circle Hover\" name=\"circleHover\" value=\"#ffbc00\" condition=\"showIcons\">\n        <input type=\"color\" title=\"Dots Color\" name=\"dotColor\" value=\"#444444\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Background Image\" value=\"\" parallax=\"\">\n            <input type=\"color\" title=\"Background Color\" value=\"#c1c1c1\" selected=\"\">\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n       <div class=\"container text-center\">\n            <div class=\"col-md-12 col-sm-12\">\n              <h1 mbr-if=\"showTitle\" class=\"plan-title mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\">\n                  Portfolio<span class=\"text-letter\">M4.</span>\n              </h1>\n            </div>\n            <div class=\"social-media col-md-12 col-sm-12\" mbr-if=\"showIcons\">\n                <ul>\n                    <li mbr-if=\"iconsCount > 0\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-facebook socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 1\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-twitter socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 2\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-linkedin socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 3\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-youtube socicon\">\n                        </span>\n                      </a>\n                    </li>\n                    <li mbr-if=\"iconsCount > 4\">\n                      <a class=\"icon-transition\" href=\"#\">\n                        <span mbr-icon=\"\" class=\"mbr-iconfont socicon-rss socicon\" style=\"\"></span>\n                      </a>\n                    </li>\n                 </ul>\n            </div>\n            <div class=\"row justify-content-center\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list=\"\" mbr-list-grow=\"menuItems\">\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><p>&nbsp;&nbsp;&nbsp;&nbsp;<br></p></li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"assets/files/Pierce for Mine Inspector - Terms &amp; Conditions.pdf\" class=\"text-danger\">\n                        \n                            TERMS AND CONDITIONS\n                        \n                        </a><div class=\"rhombus\"></div><a href=\"assets/files/Pierce for Mine Inspector - Terms &amp; Conditions.pdf\">\n                    </a></li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"assets/files/Pierce for Mine Inspector - Privacy Policy.pdf\" class=\"text-danger\">\n                        \n                            PRIVACY POLICY\n                        \n                        </a><div class=\"rhombus\"></div><a href=\"assets/files/Pierce for Mine Inspector - Privacy Policy.pdf\">\n                    </a></li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><br><br>\n                    </li>\n                    <li mbr-text=\"\" class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\"><br><br>\n                    </li>\n                </ul>\n            </div>\n            <div class=\"row\">\n                <p class=\"footer-text col-md-12 col-sm-12 mbr-fonts-style mbr-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\"><a href=\"https://www.whitehattechnology.com\" class=\"text-danger\">Copyright (c) 2018 White Hat Technology LLC</a></p>\n            </div>\n           <div id=\"google_translate_element\"></div>\n    </div>\n    <div id=\"google_translate_element\"></div>\n\n</section>",
-          "_anchor": "footer1-6i",
-          "_isUserblock": true,
-          "_sourceTheme": "portfoliom4",
-          "_cid": "r2r33a1HhJ",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<div class=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
@@ -1591,6 +1612,27 @@
             "<script type=\"text/javascript\">\nfunction googleTranslateElementInit() {\n  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');\n}\n</script>",
             "<script type=\"text/javascript\" src=\"//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\"></script>"
           ]
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text": {
+              "text-align": "center",
+              "color": "#444444"
+            }
+          },
+          "_name": "content2",
+          "_customHTML": "<section class=\"mbr-section content2\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#c1c1c1\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-sm-12 text-section\">\n                <h1 class=\"mbr-fonts-style mbr-title align-left pb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-title\" mbr-theme-style=\"display-2\">WHY I LIKE PHOTOGRAPHY<br></h1>\n                <h1 class=\"mbr-fonts-style mbr-text align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Help improve this site's Google Translate. <br><a href=\"https://translate.google.com/community\" target=\"_blank\" class=\"text-secondary\">Click&nbsp;here&nbsp;to learn how.</a></h1>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content2-6m",
+          "_isUserblock": true,
+          "_sourceTheme": "portfoliom4",
+          "_cid": "r2riQIxuGO",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         }
       ]
     },
@@ -7541,11 +7583,11 @@
           "_name": "content2",
           "_customHTML": "<section class=\"mbr-section content2\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#c1c1c1\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-8 col-sm-12 text-section\">\n                <h1 class=\"mbr-fonts-style mbr-title align-left pb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-title\" mbr-theme-style=\"display-2\">WHY I LIKE PHOTOGRAPHY<br></h1>\n                <h1 class=\"mbr-fonts-style mbr-text align-left\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Help improve this site's Google Translate. <br><a href=\"https://translate.google.com/community\" target=\"_blank\" class=\"text-secondary\">Click&nbsp;here&nbsp;to learn how.</a></h1>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "r2raHrABaL",
+          "_anchor": "content2-6k",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content2-6k"
+          "_params": {}
         }
       ]
     },
