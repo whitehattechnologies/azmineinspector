@@ -2591,7 +2591,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<!-- Type valid HTML here -->\n<div class=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
-          "_customCSS": "/* Type valid CSS here */\n.my-image {\n  width: 100%;\n  align: center;\n}\n\n.google_translate_element {\n    position: absolute;\n}",
+          "_customCSS": ".google_translate_element {\n    position: absolute;\n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
