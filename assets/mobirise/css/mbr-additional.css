@@ -7052,12 +7052,9 @@ body {
 .cid-qZfTaQHKy9 .mbr-text {
   color: #ffffff;
 }
-#custom-html-59 {
-  /* Type valid CSS here */
-}
 #custom-html-59 .my-image {
   width: 100%;
-  align: absolute;
+  align: center;
 }
 #custom-html-59 .google_translate_element {
   position: absolute;
@@ -8665,15 +8662,6 @@ body {
     width: 100% !important;
   }
 }
-#custom-html-54 .clearbox {
-  font-size: 18px ;
-  border: 1px solid black ;
-  margin-left: autopx ;
-  margin-right: autopx ;
-  margin-bottom: 50px solid white;
-  text-align: center ;
-  padding: 50px ;
-}
 .cid-r2pDiImsyq {
   padding-top: 45px;
   padding-bottom: 15px;
@@ -8763,6 +8751,15 @@ body {
 .cid-r2pDiImsyq .mbr-text {
   color: #ffffff;
 }
+#custom-html-54 .clearbox {
+  font-size: 18px ;
+  border: 1px solid black ;
+  margin-left: autopx ;
+  margin-right: autopx ;
+  margin-bottom: 50px solid white;
+  text-align: center ;
+  padding: 50px ;
+}
 #custom-html-5a {
   /* Type valid CSS here */
 }
@@ -8771,5 +8768,12 @@ body {
   align: center;
 }
 #custom-html-5a .google_translate_element {
+  position: absolute;
+}
+#custom-html-5b .my-image {
+  width: 100%;
+  align: center;
+}
+#custom-html-5b .google_translate_element {
   position: absolute;
 }
