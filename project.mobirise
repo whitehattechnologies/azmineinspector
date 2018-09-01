@@ -7343,7 +7343,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<div class=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
-          "_customCSS": "",
+          "_customCSS": ".google_translate_element {\n    position: absolute;\n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
@@ -7353,7 +7353,7 @@
           "_PHPplaceholders": [],
           "_JSplaceholders": [
             "<script type=\"text/javascript\">\nfunction googleTranslateElementInit() {\n  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');\n}\n</script>",
-            "<script type=\"text/javascript\" src=\"//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\" position=\"absolute\"></script>"
+            "<script type=\"text/javascript\" src=\"//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit\"></script>"
           ]
         }
       ]
