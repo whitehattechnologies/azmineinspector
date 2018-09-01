@@ -9940,7 +9940,7 @@
           "_customTemplate": true,
           "_afterNavbarItem": false,
           "_customHTML": "<div id=\"google_translate_element\"></div>{JS_CODE_0}{JS_CODE_1}",
-          "_customCSS": ".my-image {\n  width: 100%;\n  align: center;\n}\n\n.google_translate_element {\n    position: absolute;\n}",
+          "_customCSS": ".google_translate_element {\n    position: absolute;\n}",
           "alias": "code-editor",
           "_tags": [
             "Extension"
