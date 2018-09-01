@@ -8776,3 +8776,13 @@ body {
 #custom-html-5a .google_translate_element {
   position: absolute;
 }
+#custom-html-5d {
+  /* Type valid CSS here */
+}
+#custom-html-5d .my-image {
+  width: 100%;
+  align: center;
+}
+#custom-html-5d .google_translate_element {
+  position: absolute;
+}
