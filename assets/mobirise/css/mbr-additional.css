@@ -8629,6 +8629,22 @@ body {
   padding-bottom: 45px;
   background-color: #ffffff;
 }
+.cid-r2pDiHSKfg .mbr-title {
+  text-align: center;
+}
+.cid-r2qpKAgkYE {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #ffffff;
+}
+.cid-r2qpKAgkYE .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-r2qpKAgkYE .video-block {
+    width: 100% !important;
+  }
+}
 #custom-html-54 .clearbox {
   font-size: 18px ;
   border: 1px solid black ;
