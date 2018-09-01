@@ -2804,15 +2804,15 @@ body {
   text-align: center ;
   padding: 50px ;
 }
-.cid-r2qWN2fovr {
+.cid-r2qYkpD2LA {
   padding-top: 45px;
   padding-bottom: 15px;
   background-color: #c1c1c1;
 }
-.cid-r2qWN2fovr a:link {
+.cid-r2qYkpD2LA a:link {
   text-decoration: none;
 }
-.cid-r2qWN2fovr .icon-transition span {
+.cid-r2qYkpD2LA .icon-transition span {
   padding: 0.1rem 0.9rem;
   border-radius: 50%;
   color: #ffffff;
@@ -2825,30 +2825,30 @@ body {
   transition: all 0.3s ease-out 0s;
   font-size: 14px;
 }
-.cid-r2qWN2fovr .icon-transition span:hover {
+.cid-r2qYkpD2LA .icon-transition span:hover {
   background-color: #ffbc00;
 }
-.cid-r2qWN2fovr .social-media ul {
+.cid-r2qYkpD2LA .social-media ul {
   margin: 0;
   padding: 0;
   margin-bottom: 8px;
 }
-.cid-r2qWN2fovr .social-media ul li {
+.cid-r2qYkpD2LA .social-media ul li {
   padding: 4px;
   display: inline-block;
 }
-.cid-r2qWN2fovr .foot-menu {
+.cid-r2qYkpD2LA .foot-menu {
   flex-direction: row;
   margin: 0;
   margin-bottom: 8px;
   padding: .6em 0;
 }
-.cid-r2qWN2fovr .foot-menu > li {
+.cid-r2qYkpD2LA .foot-menu > li {
   font-size: 14px;
   padding: 0;
   display: inline-block;
 }
-.cid-r2qWN2fovr .foot-menu > li .rhombus {
+.cid-r2qYkpD2LA .foot-menu > li .rhombus {
   width: 0;
   height: 0;
   right: 4px;
@@ -2857,7 +2857,7 @@ body {
   position: relative;
   top: -19px;
 }
-.cid-r2qWN2fovr .foot-menu > li .rhombus::after {
+.cid-r2qYkpD2LA .foot-menu > li .rhombus::after {
   width: 0;
   height: 0;
   content: '';
@@ -2867,30 +2867,30 @@ body {
   border: 4px solid transparent;
   border-top-color: #444444;
 }
-.cid-r2qWN2fovr .foot-menu li a {
+.cid-r2qYkpD2LA .foot-menu li a {
   font-family: 'OpenSans', sans-serif;
   display: inline-block;
   letter-spacing: 2px;
   padding: 0 10px;
 }
-.cid-r2qWN2fovr .plan-title,
-.cid-r2qWN2fovr .text-letter {
+.cid-r2qYkpD2LA .plan-title,
+.cid-r2qYkpD2LA .text-letter {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   font-weight: 600;
 }
-.cid-r2qWN2fovr .plan-title {
+.cid-r2qYkpD2LA .plan-title {
   color: #444444;
 }
 @media (max-width: 767px) {
-  .cid-r2qWN2fovr .foot-menu {
+  .cid-r2qYkpD2LA .foot-menu {
     padding: 15px 1rem;
   }
 }
-.cid-r2qWN2fovr .mbr-section-title span {
+.cid-r2qYkpD2LA .mbr-section-title span {
   color: #ffbc00;
 }
-.cid-r2qWN2fovr .mbr-text {
+.cid-r2qYkpD2LA .mbr-text {
   color: #ffffff;
 }
 #custom-html-5f {
