@@ -7329,95 +7329,6 @@ body {
   padding: 15px 0;
   color: #444444;
 }
-.cid-r2rkv2Oacm {
-  padding-top: 45px;
-  padding-bottom: 15px;
-  background-color: #c1c1c1;
-}
-.cid-r2rkv2Oacm a:link {
-  text-decoration: none;
-}
-.cid-r2rkv2Oacm .icon-transition span {
-  padding: 0.1rem 0.9rem;
-  border-radius: 50%;
-  color: #ffffff;
-  display: block;
-  height: 3em;
-  line-height: 3em;
-  width: 3em;
-  background: #444444 none repeat scroll 0 0;
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  font-size: 14px;
-}
-.cid-r2rkv2Oacm .icon-transition span:hover {
-  background-color: #ffbc00;
-}
-.cid-r2rkv2Oacm .social-media ul {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 8px;
-}
-.cid-r2rkv2Oacm .social-media ul li {
-  padding: 4px;
-  display: inline-block;
-}
-.cid-r2rkv2Oacm .foot-menu {
-  flex-direction: row;
-  margin: 0;
-  margin-bottom: 8px;
-  padding: .6em 0;
-}
-.cid-r2rkv2Oacm .foot-menu > li {
-  font-size: 14px;
-  padding: 0;
-  display: inline-block;
-}
-.cid-r2rkv2Oacm .foot-menu > li .rhombus {
-  width: 0;
-  height: 0;
-  right: 4px;
-  border: 4px solid transparent;
-  border-bottom-color: #444444;
-  position: relative;
-  top: -19px;
-}
-.cid-r2rkv2Oacm .foot-menu > li .rhombus::after {
-  width: 0;
-  height: 0;
-  content: '';
-  position: absolute;
-  left: -4px;
-  top: 4px;
-  border: 4px solid transparent;
-  border-top-color: #444444;
-}
-.cid-r2rkv2Oacm .foot-menu li a {
-  font-family: 'OpenSans', sans-serif;
-  display: inline-block;
-  letter-spacing: 2px;
-  padding: 0 10px;
-}
-.cid-r2rkv2Oacm .plan-title,
-.cid-r2rkv2Oacm .text-letter {
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  font-weight: 600;
-}
-.cid-r2rkv2Oacm .plan-title {
-  color: #444444;
-}
-@media (max-width: 767px) {
-  .cid-r2rkv2Oacm .foot-menu {
-    padding: 15px 1rem;
-  }
-}
-.cid-r2rkv2Oacm .mbr-section-title span {
-  color: #ffbc00;
-}
-.cid-r2rkv2Oacm .mbr-text {
-  color: #444444;
-}
 .cid-r2pe54DKsI .navbar {
   min-height: 77px;
   transition: all .3s;
@@ -7697,6 +7608,95 @@ body {
   margin-bottom: 50px solid white;
   text-align: center ;
   padding: 50px ;
+}
+.cid-r2rkv2Oacm {
+  padding-top: 45px;
+  padding-bottom: 15px;
+  background-color: #c1c1c1;
+}
+.cid-r2rkv2Oacm a:link {
+  text-decoration: none;
+}
+.cid-r2rkv2Oacm .icon-transition span {
+  padding: 0.1rem 0.9rem;
+  border-radius: 50%;
+  color: #ffffff;
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  width: 3em;
+  background: #444444 none repeat scroll 0 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  font-size: 14px;
+}
+.cid-r2rkv2Oacm .icon-transition span:hover {
+  background-color: #ffbc00;
+}
+.cid-r2rkv2Oacm .social-media ul {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+.cid-r2rkv2Oacm .social-media ul li {
+  padding: 4px;
+  display: inline-block;
+}
+.cid-r2rkv2Oacm .foot-menu {
+  flex-direction: row;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: .6em 0;
+}
+.cid-r2rkv2Oacm .foot-menu > li {
+  font-size: 14px;
+  padding: 0;
+  display: inline-block;
+}
+.cid-r2rkv2Oacm .foot-menu > li .rhombus {
+  width: 0;
+  height: 0;
+  right: 4px;
+  border: 4px solid transparent;
+  border-bottom-color: #444444;
+  position: relative;
+  top: -19px;
+}
+.cid-r2rkv2Oacm .foot-menu > li .rhombus::after {
+  width: 0;
+  height: 0;
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: 4px;
+  border: 4px solid transparent;
+  border-top-color: #444444;
+}
+.cid-r2rkv2Oacm .foot-menu li a {
+  font-family: 'OpenSans', sans-serif;
+  display: inline-block;
+  letter-spacing: 2px;
+  padding: 0 10px;
+}
+.cid-r2rkv2Oacm .plan-title,
+.cid-r2rkv2Oacm .text-letter {
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  font-weight: 600;
+}
+.cid-r2rkv2Oacm .plan-title {
+  color: #444444;
+}
+@media (max-width: 767px) {
+  .cid-r2rkv2Oacm .foot-menu {
+    padding: 15px 1rem;
+  }
+}
+.cid-r2rkv2Oacm .mbr-section-title span {
+  color: #ffbc00;
+}
+.cid-r2rkv2Oacm .mbr-text {
+  color: #444444;
 }
 #custom-html-5t .google_translate_element {
   position: absolute;
