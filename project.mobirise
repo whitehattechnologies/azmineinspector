@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Pierce for Mine Inspector",
-    "currentPage": "FortheMedia.html",
+    "currentPage": "MineInspectorInfo.html",
     "theme": {
       "name": "portfoliom4",
       "title": "PortfolioM4",
@@ -73,7 +73,8 @@
     "FamilyLife.html": {
       "settings": {
         "title": "Family Life",
-        "order": 16
+        "order": 16,
+        "meta_descr": "Family Life of Pierce for Mine Inspector"
       },
       "components": [
         {
@@ -594,7 +595,8 @@
     "MyQualifications.html": {
       "settings": {
         "title": "My Qualifications",
-        "order": 17
+        "order": 17,
+        "meta_descr": "Qualifications"
       },
       "components": [
         {
@@ -1148,7 +1150,8 @@
     "MineInspectorInfo.html": {
       "settings": {
         "title": "Mine Inspector Info",
-        "order": 18
+        "order": 18,
+        "meta_descr": ""
       },
       "components": [
         {
@@ -1660,7 +1663,8 @@
     "Videos.html": {
       "settings": {
         "title": "Videos",
-        "order": 15
+        "order": 15,
+        "meta_descr": "Pierce for Mine Inspector Videos"
       },
       "components": [
         {
@@ -7080,7 +7084,7 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
+        "title": "Bill Pierce for AZ Mine Inspector",
         "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
@@ -7826,7 +7830,7 @@
       "settings": {
         "title": "Blog",
         "order": 1,
-        "meta_descr": "Santa Cruz Dem Party Blog"
+        "meta_descr": "Mine Inspector Blog Updates"
       },
       "components": [
         {
@@ -8361,7 +8365,7 @@
       "settings": {
         "title": "For the Media",
         "order": 6,
-        "meta_descr": "Easy access info for the media."
+        "meta_descr": "Pierce for Arizona Mine Inspector, easy access info for the media."
       },
       "components": [
         {
@@ -8977,7 +8981,7 @@
       "settings": {
         "title": "Photo Gallery",
         "order": 5,
-        "meta_descr": "Santa Cruz Dems Photo Gallery"
+        "meta_descr": "Pierce Campaign Photo Gallery"
       },
       "components": [
         {
