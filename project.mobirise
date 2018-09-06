@@ -7324,22 +7324,6 @@
           "_anchor": "feed-1a"
         },
         {
-          "_customTemplate": true,
-          "_afterNavbarItem": false,
-          "_customHTML": "<div class=\"sk-ww-facebook-feed\" data-embed-id=\"13706\"></div>{JS_CODE_0}",
-          "_customCSS": "",
-          "alias": "code-editor",
-          "_tags": [
-            "Extension"
-          ],
-          "_name": "pro.custom-html",
-          "_anchor": "custom-html-7m",
-          "_PHPplaceholders": [],
-          "_JSplaceholders": [
-            "<script src='https://www.sociablekit.com/app/embed/facebook-feed/widget.js'></script>"
-          ]
-        },
-        {
           "_params": {
             "paddingTop": "2",
             "paddingBottom": "2",
